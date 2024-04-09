@@ -1,0 +1,31 @@
+.catergories{
+    display: flex;
+    margin-left: 5px;
+    color: #002f34;
+    font-size:15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+  }
+  .wrapper{
+    background-color:rgb(245, 243, 243) ;
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+  }
+  span{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:8px;
+    font-size: 15px;
+  }
+  span:hover{
+    color: aqua;
+    cursor: pointer;
+  }
+  .arrow{
+    margin-left: 6px;
+  }
+  .banner{
+    display: flex;
+    justify-content: center;
+  }

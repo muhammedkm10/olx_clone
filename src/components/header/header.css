@@ -1,0 +1,137 @@
+.logo{
+    width:50px;
+    height:50px;
+    margin-left:20px;
+}
+.header{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    padding: 15px;
+
+}
+
+
+.placeSearch {
+    width: 16em;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    border: 2px solid #002f34;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .placeSearch ::selection {
+    border-color: #23e5db;
+    outline-color: #23e5db;
+  }
+  
+  .placeSearch input {
+    border-color: transparent;
+    outline-color: transparent;
+  }
+  .arrow{
+    margin-left:38px;
+  }
+
+  .productsearch{
+    margin-left: 10px;
+    width: 50em;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    border: 2px solid #002f34;
+    border-radius: 4px;
+    background-color: white;
+  }
+  .productsearch input {
+    border-color: transparent;
+    outline-color: transparent;
+  }
+    
+  .productsearch ::selection {
+    border-color: #23e5db;
+    outline-color: #23e5db;
+  }
+  .search2{
+    margin-left: 600px;
+  }
+
+  .lang{
+    padding: 3px;
+    display: flex;
+    margin-left: 5px;
+    color: #002f34;
+    font-size:18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    margin-top: 13px;
+  }
+  .login{
+    color: #002f34;
+    font-size:14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 20px;
+
+  }
+  .link{
+    color: #002f34;
+  }
+  .sellMenu {
+    margin-left: 10px;
+
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .sellMenu .all {
+    fill: white;
+  }
+  
+  .sellMenu .top {
+    fill: #23e5db;
+  }
+  
+  .sellMenu .left {
+    fill: #ffce32;
+  }
+  
+  .sellMenu .right {
+    fill: #3a77ff;
+  }
+  .sellMenu .sellMenuContent {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #002f34;
+  }
+  
+  /* .sellMenu .sellMenuContent svg {
+    align-items: center;
+  } */
+  .sellMenu .sellMenuContent span {
+    margin-left: 5px;
+  }
+  .logout{
+    background-color: red;
+    color: white;
+    border-radius: 20%;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  .logout:hover{
+    background-color: rgb(180, 28, 28);
+  }
+  .sell{
+    text-decoration: none;
+    }

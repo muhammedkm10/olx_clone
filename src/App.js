@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Homepage from "./pages/Homepage/Homepage";
+import { Routes,Route } from "react-router-dom";
+import './App.css'
+import Signuppage from "./pages/signuppage/Signuppage.jsx";
+import Loginpage from "./pages/Loginpage/Loginpage.jsx";
+import { useEffect,useContext } from "react";
+import { AuthContext } from "./store/context.js";
+import { getAuth } from 'firebase/auth'
+import Create from "./components/create/Create.jsx";
+import Viewpage from "./pages/viewpage/Viewpage.jsx";
+import Post from "./store/PostContext.js";
+
+
 
 function App() {
+  const auth = getAuth(); 
+  const {user,setUser} = useContext(AuthContext)
+  useEffect(()=>{
+   auth.onAuthStateChanged((user)=>{
+    setUser(user)
+   })
+})
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Post>
+        <Routes>
+          <Route exact path="/" element={<Homepage/>}>  </Route>
+          <Route path="/signup" element={<Signuppage/>}>  </Route>
+          <Route path="/login" element={<Loginpage/>}></Route>
+          <Route path="/create" element={<Create/>}></Route>
+          <Route path="/view" element={<Viewpage/>}></Route>
+
+        </Routes>
+      </Post>
+
     </div>
   );
 }
